@@ -32,6 +32,11 @@ const App = () => {
     setSubmitted(true);
   }
 
+  const reload = (event) => {
+    event.preventDefault();
+    window.location.reload()
+  }
+
   return (
     <div className='form-container'>
        <form className='register-form' onSubmit={handleSubmit}>
@@ -66,6 +71,9 @@ const App = () => {
            <button
             className='form-field '
             type='submit'>Register</button>
+            <button
+            className='form-field '
+            type='submit' onClick={reload}>Reset</button>
 
       </form>
     </div>
