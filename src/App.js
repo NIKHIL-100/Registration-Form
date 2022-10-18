@@ -72,7 +72,7 @@ const App = () => {
             className='form-field '
             type='submit'>Register</button>
             <button
-            className='form-field '
+            className='form-field btn'
             type='submit' onClick={reload}>Reset</button>
 
       </form>
